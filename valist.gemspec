@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["tenmihi@gmail.com"]
 
   spec.summary = "List ActiveModel validation callbacks with conditions."
-  spec.description = "Valist lists ActiveModel validation callbacks and their conditions (if/unless), including attributes and custom/proc validators."
+  spec.description = "Valist lists ActiveModel validation callbacks and their conditions (if/unless), including attributes and custom/proc validators." # rubocop:disable Layout/LineLength
   spec.homepage = "https://github.com/tenmihi/valist"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2.0"

@@ -6,3 +6,14 @@ Style/StringLiterals:
 
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - "test/**/*.rb"
+
+Layout/LineLength:
+  Exclude:
+    - "test/**/*.rb"
