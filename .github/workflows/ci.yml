@@ -21,7 +21,7 @@ jobs:
       - name: Run RuboCop
         run: bundle exec rubocop
 
-  minitest:
+  rspec:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -35,5 +35,5 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-      - name: Run Minitest
-        run: bundle exec rake test
+      - name: Run RSpec
+        run: bundle exec rspec

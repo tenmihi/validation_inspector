@@ -14,6 +14,14 @@ Metrics/MethodLength:
   Exclude:
     - "test/**/*.rb"
 
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*.rb"
+
+Lint/ConstantDefinitionInBlock:
+  Exclude:
+    - "spec/**/*.rb"
+
 Layout/LineLength:
   Exclude:
     - "test/**/*.rb"
