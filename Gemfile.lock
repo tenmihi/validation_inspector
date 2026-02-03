@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    valist (0.1.0)
+    validation_inspector (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -265,7 +265,7 @@ DEPENDENCIES
   rake (~> 13.0)
   rspec
   rubocop (~> 1.21)
-  valist!
+  validation_inspector!
 
 BUNDLED WITH
    2.7.2

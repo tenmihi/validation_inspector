@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Valist do
+RSpec.describe ValidationInspector do
   class SampleModel
     include ActiveModel::Validations
 

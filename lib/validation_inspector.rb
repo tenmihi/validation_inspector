@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "valist/version"
+require_relative "validation_inspector/version"
 
 # Lists ActiveModel validation callbacks with their conditions.
-module Valist
+module ValidationInspector
   def self.all(model_class)
     model_class._validate_callbacks.map do |cb|
       validator = validator(cb.filter)

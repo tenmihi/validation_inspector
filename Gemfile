@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in valist.gemspec
+# Specify your gem's dependencies in validation_inspector.gemspec
 gemspec
 
 group :development do
