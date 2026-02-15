@@ -81,12 +81,16 @@ module ValidationInspector
   private_class_method :format_condition, :validator_name, :extract_options
 end
 
-module ValidationInspector
-  module ClassMethodsExtension
-    def inspect_validations
-      ValidationInspector.all(self)
+if defined?(ActiveModel::Validations)
+  module ValidationInspector
+    module ClassMethodsExtension
+      def inspect_validations
+        ValidationInspector.all(self)
+      end
     end
   end
-end
 
-ActiveModel::Validations::ClassMethods.prepend ValidationInspector::ClassMethodsExtension
+  ActiveModel::Validations::ClassMethods.prepend ValidationInspector::ClassMethodsExtension
+else
+  warn "Warning: ActiveModel is not available. ValidationInspector will not work without it."
+end
