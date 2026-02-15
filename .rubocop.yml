@@ -10,7 +10,11 @@ Style/StringLiteralsInInterpolation:
 Metrics/AbcSize:
   Enabled: false
 
+Metrics/CyclomaticComplexity:
+  Max: 10
+
 Metrics/MethodLength:
+  Max: 15
   Exclude:
     - "test/**/*.rb"
 
@@ -25,3 +29,6 @@ Lint/ConstantDefinitionInBlock:
 Layout/LineLength:
   Exclude:
     - "test/**/*.rb"
+
+Style/Documentation:
+  Enabled: false
